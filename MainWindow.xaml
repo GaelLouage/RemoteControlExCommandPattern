@@ -1,0 +1,26 @@
+﻿<Window x:Class="RemoteControlEx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RemoteControlEx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Grid>
+        <!-- Define the grid with 2 rows and 2 columns -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Buttons -->
+        <Button x:Name="btnLightOn" Content="Light On" Grid.Row="0" Grid.Column="0" Click="btnLightOn_Click" />
+        <Button x:Name="btnLightOff" Content="Light Off" Grid.Row="0" Grid.Column="1" Click="btnLightOff_Click"  />
+        <Button x:Name="btnFanOn" Content="Fan On" Grid.Row="1" Grid.Column="0" Click="btnFanOn_Click" />
+        <Button x:Name="btnFanOff"  Content="Fan Off" Grid.Row="1" Grid.Column="1" Click="btnFanOff_Click"  />
+    </Grid>
+</Window>
